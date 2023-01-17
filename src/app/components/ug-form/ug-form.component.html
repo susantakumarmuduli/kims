@@ -1,0 +1,1102 @@
+<div class="create-user-header">
+  <img
+    src="../../../assets/images/application-form-small.svg"
+    class="create-user-icon"
+  />
+  UG Application Form
+</div>
+<div class="ug-form-container mt-4">
+  <div class="col-md-12 order-md-1">
+    <form class="needs-validation">
+      <div class="row">
+        <div class="form-group col-md-2 mb-3">
+          <label for="inputState">Course</label>
+          <select class="form-control" disabled>
+            <option selected>UG</option>
+            <option>PG</option>
+          </select>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="lastName">Academic Year</label>
+          <select class="form-control">
+            <option>Select academic year</option>
+            <option *ngFor="let year of academicYear">
+              {{ year["KeyTypeValueDisplay"] }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-4 mb-3">
+          <label for="inputState">Application No</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="col-md-2 mb-3">
+          <label for="lastName">Date Of Admission</label>
+          <select id="inputState" class="form-control">
+            <option selected>2021-2022</option>
+            <option>2022-2023</option>
+            <option>2023-2024</option>
+            <option>2024-2025</option>
+            <option>2025-2026</option>
+            <option>2026-2027</option>
+            <option>2027-2028</option>
+            <option>2028-2029</option>
+            <option>2029-2030</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-4 mb-3">
+          <label for="inputState">NEET Reg No</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-2 mb-3">
+          <label for="inputState">NEET - AI Rank</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-2 mb-3">
+          <label for="inputState">Score</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-2 mb-3">
+          <label for="inputState">Percentage</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-2 mb-3">
+          <label for="inputState">Percentile</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-4 mb-3">
+          <label for="inputState">CET No</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-2 mb-3">
+          <label for="inputState">RGUHS Reg No</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-2 mb-3">
+          <label for="inputState">College Adm No</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-2 mb-3">
+          <label for="inputState">Seat Category</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-2 mb-3">
+          <label for="inputState">Quota</label>
+          <select class="form-control">
+            <option>Choose</option>
+            <option *ngFor="let quota of quotas">
+              {{ quota["KeyTypeValueDisplay"] }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <h4 class="mt-3">Students Personal Details</h4>
+      <div class="row">
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Name Of the Candidate</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Photo</label>
+          <input
+            type="file"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Date of Birth</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Age</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Sex</label>
+          <select class="form-control">
+            <option selected>Choose</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Mother Tongue</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Blood Group</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Physically Handicap</label>
+          <input
+            type="file"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Nationality</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Religion</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Caste</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Category</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Place Of Birth</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">State</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Aadhar No</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">PAN No</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+      </div>
+      <h4 class="mt-3">Contact Details</h4>
+      <div class="row">
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Applicant Phone</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Email Id</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Residence Phone</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Office</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Pin</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Pin</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+      </div>
+      <h4 class="mt-3">Parent's/Guardian's Details</h4>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="row">
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Father's Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Phone No</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Occupation</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Aadhar No</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">PAN No</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Annual Income</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="row">
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Mother's Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Phone No</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Occupation</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Aadhar No</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">PAN No</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputState">Annual Income</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value=""
+                required=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="mt-3">PUC/10+2 Details</h4>
+      <div class="row">
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Name Of the Qualifying Exam</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Board Of Examination</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Reg No</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Medium Of Instruction</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <label for="inputState">Year Of Passing</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            value=""
+            required=""
+          />
+        </div>
+      </div>
+      <h4 class="mt-3">Name and Address Of the Institution Last Studied</h4>
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <div class="form-group">
+            <textarea
+              id="exampleFormControlTextarea1"
+              rows="3"
+              class="form-control"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <h4 class="mt-3">
+        Marks Obtained In the Qualifying Exam - II PUC Or Its Equivalent (All
+        Subjects)
+      </h4>
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <table class="table table-hover">
+            <thead>
+              <tr class="table-primary table-header">
+                <th scope="col">Subjects</th>
+                <th scope="col">Max Marks</th>
+                <th scope="col">Marks Obtained</th>
+                <th scope="col">Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">First Language</th>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </td>
+                <td>86.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">Second Language</th>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </td>
+                <td>86.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">Mathematics</th>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </td>
+                <td>86.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">Physics</th>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value="100"
+                    required=""
+                    disabled="true"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </td>
+                <td>86.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">Chemistry</th>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value="100"
+                    required=""
+                    disabled="true"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </td>
+                <td>86.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">Biology</th>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value="100"
+                    required=""
+                    disabled="true"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </td>
+                <td>86.00%</td>
+              </tr>
+              <tr class="table-active">
+                <th scope="row">Total</th>
+                <td>100</td>
+                <td>86</td>
+                <td>86.00%</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">PCB</th>
+                <td>100</td>
+                <td>86</td>
+                <td>86.00%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <h4 class="mt-3">Documents Submitted</h4>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="10thMarksCard"
+              />
+              <label class="form-check-label" for="10thMarksCard">
+                10th Marks card
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="12thMarksCard"
+              />
+              <label class="form-check-label" for="12thMarksCard">
+                12th Marks card
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="KEAAllotmentLetter"
+              />
+              <label class="form-check-label" for="KEAAllotmentLetter">
+                KEA Allotment Letter
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="KEAAcknowledgementReceipt"
+              />
+              <label class="form-check-label" for="KEAAcknowledgementReceipt">
+                KEA Acknowledgement (Receipt)
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="Income"
+              />
+              <label class="form-check-label" for="Income"> Income </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="MigrationCertificate"
+              />
+              <label class="form-check-label" for="MigrationCertificate">
+                Migration Certificate
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="NEETRankCard"
+              />
+              <label class="form-check-label" for="NEETRankCard">
+                NEET Rank Card
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="5ColourPassportSizePhotos"
+              />
+              <label class="form-check-label" for="5ColourPassportSizePhotos">
+                5 Colour Passport Size Photos
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="OriginalTC"
+              />
+              <label class="form-check-label" for="OriginalTC">
+                Original TC
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="Ruralbond"
+              />
+              <label class="form-check-label" for="Ruralbond">
+                Rural bond
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="aadharCard"
+              />
+              <label class="form-check-label" for="aadharCard">
+                Aadhar card
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="Caste"
+              />
+              <label class="form-check-label" for="Caste"> Caste </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="NRIWard"
+              />
+              <label class="form-check-label" for="NRIWard"> NRI Ward </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="PANCopyOfParents"
+              />
+              <label class="form-check-label" for="PANCopyOfParents">
+                PAN Copy Of Parents
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="Passportcard"
+              />
+              <label class="form-check-label" for="Passportcard">
+                Passport card
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="Undertaking"
+              />
+              <label class="form-check-label" for="Undertaking">
+                Undertaking
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="BankGuarantee"
+              />
+              <label class="form-check-label" for="BankGuarantee">
+                Bank Guarantee
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="EligibilityCertificate"
+              />
+              <label class="form-check-label" for="EligibilityCertificate">
+                Eligibility Certificate
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <button type="submit" class="btn btn-primary rounded-pill px-2">
+        Save
+      </button>
+    </form>
+  </div>
+</div>
+<!-- <div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        id="dropdownBasic1"
+        ngbDropdownToggle
+      >
+        Toggle dropdown
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <ngb-datepicker
+          #d
+          [startDate]="{ year: 1789, month: 7 }"
+        ></ngb-datepicker>
+      </div>
+    </div>
+  </div>
+  <input
+    class="form-control"
+    placeholder="dd/mm/yyyy"
+    name="d2"
+    ngbDatepicker
+    #d2="ngbDatepicker"
+  />
+  <div class="col text-end">
+    <div ngbDropdown placement="top-end" class="d-inline-block">
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        id="dropdownBasic2"
+        ngbDropdownToggle
+      >
+        Toggle dropup
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+        <button ngbDropdownItem ngbDropdown>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            id="dropdownBasic3"
+            ngbDropdownToggle
+          >
+            Toggle dropup
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic3">
+            <button ngbDropdownItem>Another Action</button>
+          </div>
+        </button>
+        <button ngbDropdownItem>Another Action</button>
+        <button ngbDropdownItem>Something else is here</button>
+      </div>
+    </div>
+  </div>
+</div> -->

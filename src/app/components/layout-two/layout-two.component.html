@@ -1,0 +1,64 @@
+<div class="layout-header">
+  <img
+    class="toggle-icon"
+    src="../../../assets/images/toggle-menu.svg"
+    title="open or close slide menu bar"
+    (click)="slideMenuShowhide()"
+  />
+  <h1 class="title">
+    Kempegowda Institute of Medical Sciences
+    <span class="sub-title">| Database</span>
+  </h1>
+  <div ngbDropdown class="d-inline-block profile-menu-right">
+    <button
+      type="button"
+      class="btn btn-outline-primary profile-menu"
+      id="dropdownBasic2"
+      ngbDropdownToggle
+    >
+      Toggle dropdown
+    </button>
+    <div
+      ngbDropdownMenu
+      class="drop-down-menu"
+      aria-labelledby="dropdownBasic2"
+    >
+      <button ngbDropdownItem routerLink="/kims">View my profile</button>
+      <button ngbDropdownItem>Change password</button>
+      <button ngbDropdownItem>Sign out</button>
+    </div>
+  </div>
+</div>
+<div class="layout-body-content">
+  <div class="left-menu" *ngIf="isMenuShow">
+    <div
+      class="list-item"
+      routerLink="./ugApplicationForm"
+      routerLinkActive="active"
+    >
+      UG Application Form <i class="material-icons">&#xe5cc;</i>
+    </div>
+    <div
+      class="list-item"
+      routerLink="./pgApplicationForm"
+      routerLinkActive="active"
+    >
+      PG Application Form <i class="material-icons">&#xe5cc;</i>
+    </div>
+    <div class="list-item" routerLink="./ugList" routerLinkActive="active">
+      UG List <i class="material-icons">&#xe5cc;</i>
+    </div>
+    <div class="list-item" routerLink="./pgList" routerLinkActive="active">
+      PG List<i class="material-icons">&#xe5cc;</i>
+    </div>
+    <div class="list-item" routerLink="./seatMatrix" routerLinkActive="active">
+      Seat Matrix <i class="material-icons">&#xe5cc;</i>
+    </div>
+    <div class="list-item" routerLink="./fees" routerLinkActive="active">
+      Fees <i class="material-icons">&#xe5cc;</i>
+    </div>
+  </div>
+  <div class="right-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

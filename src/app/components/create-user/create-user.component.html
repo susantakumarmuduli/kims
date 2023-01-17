@@ -1,0 +1,101 @@
+<div class="create-user-header">
+  <img
+    src="../../../assets/images/add-user-small-blue.svg"
+    class="create-user-icon"
+  />
+  Create User
+</div>
+<div class="create-user-form-container mt-4">
+  <form [formGroup]="UserForm" (ngSubmit)="onSubmit()">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12 mt-3">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              formControlName="username"
+              aria-describedby="emailHelp"
+              placeholder="Enter username"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mt-3">
+          <div class="form-group">
+            <label for="firstName">First name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              formControlName="firstName"
+              placeholder="Enter first name"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              formControlName="lastName"
+              placeholder="Enter last name"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="form-group">
+            <label for="password">New password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              formControlName="password"
+              placeholder="Enter password"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="form-group">
+            <label for="confirmPassword">Confirm password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="confirmPassword"
+              formControlName="confirmPassword"
+              placeholder="Enter password"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              formControlName="email"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <hr class="my-4" />
+    <button
+      type="submit"
+      [disabled]="!UserForm.valid"
+      class="btn btn-primary default-button"
+    >
+      Create user
+    </button>
+  </form>
+</div>
+<app-loader *ngIf="isLoading"></app-loader>

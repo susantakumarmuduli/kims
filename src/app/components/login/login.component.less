@@ -1,0 +1,54 @@
+@import "../../../assets/global/global.less";
+
+.login {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(130deg, @kims-blue, @kims-teal);
+  //background-image: url("../../../assets/images/login-bg.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../assets/images/login-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0.15;
+  }
+  &__title {
+    color: @kims-white;
+    z-index: 4;
+  }
+
+  &__container {
+    width: 600px;
+    padding: 2rem;
+    background-color: @kims-white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 40%);
+    z-index: 4;
+  }
+  &__header-container {
+    width: 300px;
+  }
+  &__logo {
+    width: 130px;
+  }
+
+  &__form-container {
+    width: 100%;
+    .submit-btn {
+      background-color: @kims-blue;
+      border-color: @kims-blue;
+    }
+  }
+}

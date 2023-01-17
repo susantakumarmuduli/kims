@@ -1,0 +1,46 @@
+<div class="login">
+  <div class="login__overlay"></div>
+  <h2 class="login__title mb-5">Kempegowda Institute of Medical Sciences</h2>
+  <div class="login__container">
+    <div class="login__header-container">
+      <img
+        src="../../../assets/images/kims-logo.png"
+        alt="KIMS Logo"
+        class="login__logo"
+      />
+    </div>
+    <div class="login__form-container">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <h4 class="mb-4">Login</h4>
+        <div class="form-group">
+          <label for="username">*Username</label>
+          <input
+            type="email"
+            class="form-control"
+            id="username"
+            formControlName="username"
+            placeholder="Enter username"
+          />
+        </div>
+        <div class="form-group mt-4">
+          <label for="password">*Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            formControlName="password"
+            placeholder="Password"
+          />
+        </div>
+        <p class="text-danger" *ngIf="isError">{{ errorMessage }}</p>
+        <button
+          type="submit"
+          [disabled]="!form.valid"
+          class="btn btn-primary submit-btn btn-block mt-4"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

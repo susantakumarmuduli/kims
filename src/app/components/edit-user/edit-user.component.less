@@ -1,0 +1,46 @@
+@import "../../../assets/global/global.less";
+.create-user-header {
+  border-bottom: 1px solid @kims-border-color;
+  padding: 1rem 0 0.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  color: @kims-blue;
+  position: sticky;
+  top: 0px;
+  color: @kims-blue;
+  background: @kims-light-grey-2;
+  z-index: 2;
+  .create-user-icon {
+    margin-right: 0.5rem;
+  }
+}
+.edit-user-list-container {
+  width: 100%;
+  border: 1px solid @kims-border-color;
+  border-radius: @kims-border-radius;
+  padding: 0;
+  background: @kims-white;
+  overflow: hidden;
+  .table {
+    margin-bottom: 0;
+    tbody {
+      tr {
+        &:nth-last-child(1) {
+          border-bottom: 0px solid @kims-white;
+        }
+      }
+    }
+  }
+  .edit-icon {
+    cursor: pointer;
+  }
+}
+.edit-user-form-container {
+  width: 100%;
+  border: 1px solid @kims-border-color;
+  border-radius: @kims-border-radius;
+  padding: 1em;
+  background: @kims-white;
+  overflow: hidden;
+}

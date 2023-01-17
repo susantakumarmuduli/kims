@@ -1,0 +1,30 @@
+<div class="create-user-header">
+  <img
+    src="../../../assets/images/list-user-small-blue.svg"
+    class="create-user-icon"
+  />
+  User List
+</div>
+<div class="create-user-form-container mt-4">
+  <table class="table table-hover">
+    <thead>
+      <tr class="table-primary table-header">
+        <th scope="col">#</th>
+        <th scope="col">User name</th>
+        <th scope="col">First name</th>
+        <th scope="col">Last name</th>
+        <th scope="col">Email id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userlist; let i = index">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ user["UserName"] }}</td>
+        <td>{{ user["FirstName"] }}</td>
+        <td>{{ user["LastName"] }}</td>
+        <td>{{ user["EmailId"] }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-loader *ngIf="isLoading"></app-loader>
